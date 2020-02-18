@@ -1,0 +1,32 @@
+{
+  "name": "js-little-helper",
+  "version": "1.0.0",
+  "description": "A Collection of JavaScript Helpers",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oitio/js-little-helper.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Helper",
+    "Libary"
+  ],
+  "author": "Dennis Hosch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oitio/js-little-helper/issues"
+  },
+  "homepage": "https://github.com/oitio/js-little-helper#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {}
+}
