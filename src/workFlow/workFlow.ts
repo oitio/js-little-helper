@@ -1,6 +1,6 @@
-export default function workFlow(states: {[key:string]:Function}, start: string) {
+export default function workFlow(states: {[key:string]:(setState: (key:string)=>object|void) => void}, start: string) {
     let state: string;
-    let scope: object;
+    let scope: object|void;
     setState(start);
 
     function setState(key: string): undefined {
@@ -11,8 +11,7 @@ export default function workFlow(states: {[key:string]:Function}, start: string)
         }
         state = key;
         let fired = false;
-        console.log(state);
-        scope = fn((goToKey: string) => {
+        scope = fn((goToKey: string): object|void => {
             if (!fired) setState(goToKey);
             fired = true;
         })
